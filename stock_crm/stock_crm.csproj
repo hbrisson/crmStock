@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B527883-33D6-455B-BD65-8BF576433077}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>stock_crm</RootNamespace>
+    <AssemblyName>stock_crm</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.1.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accueil_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accueil_form.Designer.cs">
+      <DependentUpon>Accueil_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="assignationNouvCommercial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="assignationNouvCommercial.designer.cs">
+      <DependentUpon>assignationNouvCommercial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="facture_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="facture_form.Designer.cs">
+      <DependentUpon>facture_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="top_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="top_info.designer.cs">
+      <DependentUpon>top_info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="topInfoConnect.cs" />
+    <Compile Include="customForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="commande.cs" />
+    <Compile Include="commandeConnect.cs" />
+    <Compile Include="commandeProduit.cs" />
+    <Compile Include="consultation_commande_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consultation_commande_form.designer.cs">
+      <DependentUpon>consultation_commande_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="contact.cs" />
+    <Compile Include="contactConnect.cs" />
+    <Compile Include="dbconnect.cs" />
+    <Compile Include="formulaire_contact_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formulaire_contact_form.Designer.cs">
+      <DependentUpon>formulaire_contact_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formulaire_proposition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formulaire_proposition.designer.cs">
+      <DependentUpon>formulaire_proposition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formulaire_tiers_formcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formulaire_tiers_formcs.Designer.cs">
+      <DependentUpon>formulaire_tiers_formcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formulaire_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formulaire_user.designer.cs">
+      <DependentUpon>formulaire_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formulaire_user_modifier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formulaire_user_modifier.designer.cs">
+      <DependentUpon>formulaire_user_modifier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formulaire_user_supprimer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formulaire_user_supprimer.designer.cs">
+      <DependentUpon>formulaire_user_supprimer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="identification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="identification.designer.cs">
+      <DependentUpon>identification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="information_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="information_user.designer.cs">
+      <DependentUpon>information_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modifier_tiers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modifier_tiers.Designer.cs">
+      <DependentUpon>modifier_tiers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modiier_contact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modiier_contact.Designer.cs">
+      <DependentUpon>modiier_contact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="produit.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tiers.cs" />
+    <Compile Include="tiersConnect.cs" />
+    <Compile Include="Toolbox.cs" />
+    <Compile Include="user.cs" />
+    <Compile Include="userConnect.cs" />
+    <Compile Include="usertiers.cs" />
+    <EmbeddedResource Include="Accueil_form.resx">
+      <DependentUpon>Accueil_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="assignationNouvCommercial.resx">
+      <DependentUpon>assignationNouvCommercial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="facture_form.resx">
+      <DependentUpon>facture_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="top_info.resx">
+      <DependentUpon>top_info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consultation_commande_form.resx">
+      <DependentUpon>consultation_commande_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formulaire_contact_form.resx">
+      <DependentUpon>formulaire_contact_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formulaire_proposition.resx">
+      <DependentUpon>formulaire_proposition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formulaire_tiers_formcs.resx">
+      <DependentUpon>formulaire_tiers_formcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formulaire_user.resx">
+      <DependentUpon>formulaire_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formulaire_user_modifier.resx">
+      <DependentUpon>formulaire_user_modifier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formulaire_user_supprimer.resx">
+      <DependentUpon>formulaire_user_supprimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="identification.resx">
+      <DependentUpon>identification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="information_user.resx">
+      <DependentUpon>information_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifier_tiers.resx">
+      <DependentUpon>modifier_tiers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modiier_contact.resx">
+      <DependentUpon>modiier_contact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
