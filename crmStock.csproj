@@ -34,6 +34,9 @@
     <RootNamespace>crmStock</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.1.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.Entity, Version=6.1.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
@@ -167,70 +170,102 @@
     <None Include="stock_crm\Properties\Settings.settings" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="stock_crm\Accueil_form.cs" />
+    <Compile Include="stock_crm\Accueil_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="stock_crm\Accueil_form.Designer.cs">
       <DependentUpon>Accueil_form.cs</DependentUpon>
     </Compile>
-    <Compile Include="stock_crm\assignationNouvCommercial.cs" />
+    <Compile Include="stock_crm\assignationNouvCommercial.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="stock_crm\assignationNouvCommercial.designer.cs">
       <DependentUpon>assignationNouvCommercial.cs</DependentUpon>
     </Compile>
     <Compile Include="stock_crm\commande.cs" />
     <Compile Include="stock_crm\commandeConnect.cs" />
     <Compile Include="stock_crm\commandeProduit.cs" />
-    <Compile Include="stock_crm\consultation_commande_form.cs" />
+    <Compile Include="stock_crm\consultation_commande_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="stock_crm\consultation_commande_form.designer.cs">
       <DependentUpon>consultation_commande_form.cs</DependentUpon>
     </Compile>
     <Compile Include="stock_crm\contact.cs" />
     <Compile Include="stock_crm\contactConnect.cs" />
-    <Compile Include="stock_crm\customForm.cs" />
+    <Compile Include="stock_crm\customForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="stock_crm\dbconnect.cs" />
-    <Compile Include="stock_crm\facture_form.cs" />
+    <Compile Include="stock_crm\facture_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="stock_crm\facture_form.Designer.cs">
       <DependentUpon>facture_form.cs</DependentUpon>
     </Compile>
-    <Compile Include="stock_crm\formulaire_contact_form.cs" />
+    <Compile Include="stock_crm\formulaire_contact_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="stock_crm\formulaire_contact_form.Designer.cs">
       <DependentUpon>formulaire_contact_form.cs</DependentUpon>
     </Compile>
-    <Compile Include="stock_crm\formulaire_proposition.cs" />
+    <Compile Include="stock_crm\formulaire_proposition.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="stock_crm\formulaire_proposition.designer.cs">
       <DependentUpon>formulaire_proposition.cs</DependentUpon>
     </Compile>
-    <Compile Include="stock_crm\formulaire_tiers_formcs.cs" />
+    <Compile Include="stock_crm\formulaire_tiers_formcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="stock_crm\formulaire_tiers_formcs.Designer.cs">
       <DependentUpon>formulaire_tiers_formcs.cs</DependentUpon>
     </Compile>
-    <Compile Include="stock_crm\formulaire_user.cs" />
+    <Compile Include="stock_crm\formulaire_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="stock_crm\formulaire_user.designer.cs">
       <DependentUpon>formulaire_user.cs</DependentUpon>
     </Compile>
-    <Compile Include="stock_crm\formulaire_user_modifier.cs" />
+    <Compile Include="stock_crm\formulaire_user_modifier.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="stock_crm\formulaire_user_modifier.designer.cs">
       <DependentUpon>formulaire_user_modifier.cs</DependentUpon>
     </Compile>
-    <Compile Include="stock_crm\formulaire_user_supprimer.cs" />
+    <Compile Include="stock_crm\formulaire_user_supprimer.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="stock_crm\formulaire_user_supprimer.designer.cs">
       <DependentUpon>formulaire_user_supprimer.cs</DependentUpon>
     </Compile>
-    <Compile Include="stock_crm\identification.cs" />
+    <Compile Include="stock_crm\identification.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="stock_crm\identification.designer.cs">
       <DependentUpon>identification.cs</DependentUpon>
     </Compile>
-    <Compile Include="stock_crm\information_user.cs" />
+    <Compile Include="stock_crm\information_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="stock_crm\information_user.designer.cs">
       <DependentUpon>information_user.cs</DependentUpon>
     </Compile>
-    <Compile Include="stock_crm\menu.cs" />
+    <Compile Include="stock_crm\menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="stock_crm\menu.Designer.cs">
       <DependentUpon>menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="stock_crm\modifier_tiers.cs" />
+    <Compile Include="stock_crm\modifier_tiers.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="stock_crm\modifier_tiers.Designer.cs">
       <DependentUpon>modifier_tiers.cs</DependentUpon>
     </Compile>
-    <Compile Include="stock_crm\modiier_contact.cs" />
+    <Compile Include="stock_crm\modiier_contact.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="stock_crm\modiier_contact.Designer.cs">
       <DependentUpon>modiier_contact.cs</DependentUpon>
     </Compile>
@@ -240,6 +275,7 @@
     <Compile Include="stock_crm\obj\Release\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="stock_crm\obj\Release\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="stock_crm\obj\Release\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="stock_crm\PowerPacks.cs" />
     <Compile Include="stock_crm\produit.cs" />
     <Compile Include="stock_crm\Program.cs" />
     <Compile Include="stock_crm\Properties\AssemblyInfo.cs" />
@@ -249,7 +285,9 @@
     <Compile Include="stock_crm\tiersConnect.cs" />
     <Compile Include="stock_crm\Toolbox.cs" />
     <Compile Include="stock_crm\topInfoConnect.cs" />
-    <Compile Include="stock_crm\top_info.cs" />
+    <Compile Include="stock_crm\top_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="stock_crm\top_info.designer.cs">
       <DependentUpon>top_info.cs</DependentUpon>
     </Compile>
