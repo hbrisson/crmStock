@@ -1,1 +1,0 @@
-# crmStock test git repository

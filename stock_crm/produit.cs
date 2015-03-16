@@ -19,6 +19,7 @@ namespace stock_crm
 
         public produit(int id,string nom,double prix,int quantite)
         {
+            //test
             this.id = id;
             this.nom = nom;
             this.prix = prix;
