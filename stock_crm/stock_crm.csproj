@@ -55,13 +55,23 @@
     <Compile Include="Accueil_form.Designer.cs">
       <DependentUpon>Accueil_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="action.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="action.Designer.cs">
+      <DependentUpon>action.cs</DependentUpon>
+    </Compile>
+    <Compile Include="actionCl.cs" />
+    <Compile Include="actionConnect.cs" />
     <Compile Include="assignationNouvCommercial.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="assignationNouvCommercial.designer.cs">
       <DependentUpon>assignationNouvCommercial.cs</DependentUpon>
     </Compile>
-    <Compile Include="commande_tiers_form.cs" />
+    <Compile Include="commande_tiers_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="commande_tiers_form.designer.cs">
       <DependentUpon>commande_tiers_form.cs</DependentUpon>
     </Compile>
@@ -182,6 +192,9 @@
     <Compile Include="usertiers.cs" />
     <EmbeddedResource Include="Accueil_form.resx">
       <DependentUpon>Accueil_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="action.resx">
+      <DependentUpon>action.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="assignationNouvCommercial.resx">
       <DependentUpon>assignationNouvCommercial.cs</DependentUpon>

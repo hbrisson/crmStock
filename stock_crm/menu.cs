@@ -24,6 +24,7 @@ namespace stock_crm
         public formulaire_user_supprimer formulaire_user_supprimer;
         public Accueil_form Accueil_form;
         public assignationNouvCommercial assignationNouvCommercial;
+        public action action;
 
         private bool firstTime=true;
 
@@ -259,6 +260,19 @@ namespace stock_crm
             panelForm.Controls.Add(formulaire_user_supprimer);
             formulaire_user_supprimer.Show();
 
+        }
+
+        private void historiqueToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Ferme les forms avant l'ouverture de celle concernée
+            Toolbox.fermer_form();
+
+            //On ajoute le form voulu dans le main panel
+            action = new action();
+            action.Text = "Historique des actions";
+            action.TopLevel = false;
+            panelForm.Controls.Add(action);
+            action.Show();
         }
 
     }

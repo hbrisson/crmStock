@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "crmStock", "crmStock.csproj", "{3337CA94-563C-42D0-9313-7B170D51E6DB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "crmStock", "crmStock.csproj", "{D3602B45-9E6A-4167-B10C-04F88DD632C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3337CA94-563C-42D0-9313-7B170D51E6DB}.Debug|x86.ActiveCfg = Debug|x86
-		{3337CA94-563C-42D0-9313-7B170D51E6DB}.Debug|x86.Build.0 = Debug|x86
-		{3337CA94-563C-42D0-9313-7B170D51E6DB}.Release|x86.ActiveCfg = Release|x86
-		{3337CA94-563C-42D0-9313-7B170D51E6DB}.Release|x86.Build.0 = Release|x86
+		{D3602B45-9E6A-4167-B10C-04F88DD632C8}.Debug|x86.ActiveCfg = Debug|x86
+		{D3602B45-9E6A-4167-B10C-04F88DD632C8}.Debug|x86.Build.0 = Debug|x86
+		{D3602B45-9E6A-4167-B10C-04F88DD632C8}.Release|x86.ActiveCfg = Release|x86
+		{D3602B45-9E6A-4167-B10C-04F88DD632C8}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -28,7 +28,7 @@ namespace stock_crm
             server = "localhost";
             database = "crm";
             uid = "root";
-            password = "toto";
+            password = "NRJUJDPWsovv0158";
             string connectionString;
             connectionString = "SERVER=" + server + ";" + "DATABASE=" +
             database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";

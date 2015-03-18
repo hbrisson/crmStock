@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{3337CA94-563C-42D0-9313-7B170D51E6DB}</ProjectGuid>
+    <ProjectGuid>{D3602B45-9E6A-4167-B10C-04F88DD632C8}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <NoStandardLibraries>false</NoStandardLibraries>
     <AssemblyName>WindowsApplication</AssemblyName>
@@ -49,10 +49,8 @@
   <ItemGroup>
     <None Include=".gitattributes" />
     <None Include=".gitignore" />
-    <None Include=".git\COMMIT_EDITMSG" />
     <None Include=".git\config" />
     <None Include=".git\description" />
-    <None Include=".git\FETCH_HEAD" />
     <None Include=".git\HEAD" />
     <None Include=".git\hooks\applypatch-msg.sample" />
     <None Include=".git\hooks\commit-msg.sample" />
@@ -68,7 +66,6 @@
     <None Include=".git\logs\HEAD" />
     <None Include=".git\logs\refs\heads\master" />
     <None Include=".git\logs\refs\remotes\origin\HEAD" />
-    <None Include=".git\logs\refs\remotes\origin\master" />
     <None Include=".git\objects\06\1c9ca950d0e8bb952c52799fb401a6614ad640" />
     <None Include=".git\objects\0a\440b7fd997a6382a212fc8fc59868090691ea3" />
     <None Include=".git\objects\0d\e4582ca894702095ff8b8633830c6c9d6524bc" />
@@ -79,24 +76,31 @@
     <None Include=".git\objects\14\85e09c37d1a3ce0eee1bb575e62e98a49b5f80" />
     <None Include=".git\objects\1a\f7de150c99c12dd67a509fe57c10d63e4eeb04" />
     <None Include=".git\objects\1b\01daadbc50d53786932bd83c48044ecfd84741" />
+    <None Include=".git\objects\1b\c915c5cb7185a9438de28a7b1a7dfe8c01ee7f" />
     <None Include=".git\objects\1e\af0fbd05041fab8813fe6ecabbc780888c5c5d" />
+    <None Include=".git\objects\1f\f0c423042b46cb1d617b81efb715defbe8054d" />
     <None Include=".git\objects\21\1790fda4a1656379d26c73a909cb75d67dfedb" />
     <None Include=".git\objects\21\459b3cf1a414b988f7b07b1ba37145b4fe39ca" />
     <None Include=".git\objects\26\86acdbd1182419bce50287d82b6780e24c2048" />
+    <None Include=".git\objects\2a\796ca2027b8c01ebaefb8eccd5631dfacb904f" />
     <None Include=".git\objects\2f\655167347680a48971b725b67e00209111ca20" />
     <None Include=".git\objects\33\61613dc61d70370ac9d705eb024f0b98f410b9" />
+    <None Include=".git\objects\34\5d6d44e3fc93c5d46fdc5dcdfdaaff8a561f22" />
     <None Include=".git\objects\38\e0421e212a524ac15c7fd92c52e7a5dbd4697d" />
     <None Include=".git\objects\39\645652af62950ebf3b28ec3a5400dcec30b1c4" />
     <None Include=".git\objects\39\e3694a5ea1af8e75fcd00602e079fab943c918" />
     <None Include=".git\objects\3b\057a1f0ce105df17f6eb97ec7630381e9f7425" />
+    <None Include=".git\objects\3e\d0037f697c872bbe7307f2ed4c4273cd216c3c" />
     <None Include=".git\objects\3f\62d5ad6c0fb2d29184412ffd421931a53aa022" />
     <None Include=".git\objects\3f\e2cabff5ec46d476a3ab69acf1f3794b053b0e" />
+    <None Include=".git\objects\48\f34fa6a7ae924b3f32ab333d18430c08d1bf1a" />
     <None Include=".git\objects\4a\5f13b5b0b0bebcbccd8ccca4f86f7e54b2e28d" />
     <None Include=".git\objects\4d\4b2c7232f6a261112a3bfc32bd11e631037c9f" />
     <None Include=".git\objects\4e\56d4ac3106f854897d573c49829af69f074e4b" />
     <None Include=".git\objects\4f\a8a1347cc388ea45270f5cd79e21e125a7fe42" />
     <None Include=".git\objects\59\099f264e4588a59cc926f0688026d9287e9fbd" />
     <None Include=".git\objects\59\9672f185ada21eae2f4646b5c9665bde5cd654" />
+    <None Include=".git\objects\5f\282702bb03ef11d7184d19c80927b47f919764" />
     <None Include=".git\objects\60\4150bc91acb7383c4025248374c26c53b2cbc5" />
     <None Include=".git\objects\62\2b6bceea4b375e2798918cd33fd8af623e2f64" />
     <None Include=".git\objects\65\2b4d0fc8fea3397f3b8009501417fb1fda739b" />
@@ -106,6 +110,7 @@
     <None Include=".git\objects\6f\d48b204837759cfedc528391776509274c44eb" />
     <None Include=".git\objects\70\328cbb3edcfb20f5f63d05bdb51b39146ee9d1" />
     <None Include=".git\objects\76\e37ab1aca27e998b680543615198572c83a0b0" />
+    <None Include=".git\objects\77\9ddacaa40c40d9353e3a02686a141e0170ac1d" />
     <None Include=".git\objects\78\1593582554ac654692420fc91850d43ca75f37" />
     <None Include=".git\objects\7a\993594210617aaa2aa684aea008e689d098307" />
     <None Include=".git\objects\82\201602f07af06bfda03dbc847bdd841a7911a9" />
@@ -122,16 +127,22 @@
     <None Include=".git\objects\95\949d87bbeea676e370c0f444fc60f74cf8693c" />
     <None Include=".git\objects\97\b5f0c6f7a8f4543107f11f1c9b7f0ec019e304" />
     <None Include=".git\objects\9a\6a84e47575d9e9da87f0624cc0c79ae8710bce" />
+    <None Include=".git\objects\9e\02d8796f9b6c02ba98dad20fa823041b12617a" />
     <None Include=".git\objects\9f\ce4c8cffecb66d889a99b11029d06104161a17" />
     <None Include=".git\objects\a0\eee8542a8e3d143a923af2f3cf57da8a40d431" />
+    <None Include=".git\objects\a3\72a14fc06aae377b2aa6d4bfc50f1f908cfebd" />
+    <None Include=".git\objects\a3\87b5b2307866e10f56a6c98b2ca011c2ae2e0b" />
     <None Include=".git\objects\a7\211f447dfd816a3aa17d3b12ee5d7bfb25e86b" />
     <None Include=".git\objects\af\7dbebbacef595e3089c01c05671016c21a8304" />
     <None Include=".git\objects\b2\8aed81e2e95cc8a908ca814d9d81da58540250" />
+    <None Include=".git\objects\b9\cb7e43f920c4cfba925327914bfd37ea356647" />
     <None Include=".git\objects\ba\0c2adb71647f324af61c30383071f36aee2095" />
     <None Include=".git\objects\c3\c7c294608b2971777a4858f1c34767533bd76b" />
     <None Include=".git\objects\c4\a180d7fedbdd58878c229c54b21f9a5632660b" />
+    <None Include=".git\objects\c9\65fb3a9021e24a0fb4dcbd3df72eb56ba24a23" />
     <None Include=".git\objects\c9\75d1efe1b6e46831f84424e444c8243e686ed7" />
     <None Include=".git\objects\c9\cc2e0ecee1523a1c74e828aac1d9ad0daafe61" />
+    <None Include=".git\objects\ca\26e1eaebc825e892a1dbeff5c189894951e9ea" />
     <None Include=".git\objects\cc\20a0facc5cca48e1780d91a7be8ba73cb41ad9" />
     <None Include=".git\objects\cd\24315a5224426b5b34f9c607a78d0aa912f501" />
     <None Include=".git\objects\cd\6ec852c72e30cd163e93adfb2b0e39ac1e4559" />
@@ -146,6 +157,8 @@
     <None Include=".git\objects\f0\adbf09941eac244c567214dcdcae2a5f30864b" />
     <None Include=".git\objects\f1\5bcc27492b3a44d1485af2b5088e3020c88bb2" />
     <None Include=".git\objects\f1\9c6d151af08986589b5f5098dc7d544a30b2ee" />
+    <None Include=".git\objects\f6\2b3581efef6e5b53987a4f83d8e6834d99dedf" />
+    <None Include=".git\objects\fc\eb303a4d401483ac211b1243e793f496e0c4f1" />
     <None Include=".git\objects\fe\07c6e1fa06758db00cdae848c0ce6594cfaff6" />
     <None Include=".git\objects\fe\73893cdf5d9d98cb2380aa7f522cf14fc8c619" />
     <None Include=".git\objects\ff\0c76bba45531cbb9028ad19d1d531e2aa2f226" />
@@ -153,7 +166,6 @@
     <None Include=".git\packed-refs" />
     <None Include=".git\refs\heads\master" />
     <None Include=".git\refs\remotes\origin\HEAD" />
-    <None Include=".git\refs\remotes\origin\master" />
     <None Include=".git\sourcetreeconfig" />
     <None Include="stock_crm\App.config" />
     <None Include="stock_crm\bin\Debug\stock_crm.vshost.exe.config" />
@@ -161,12 +173,6 @@
     <None Include="stock_crm\bin\Release\stock_crm.exe.config" />
     <None Include="stock_crm\bin\Release\stock_crm.vshost.exe.config" />
     <None Include="stock_crm\bin\Release\stock_crm.vshost.exe.manifest" />
-    <None Include="stock_crm\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
-    <None Include="stock_crm\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <None Include="stock_crm\obj\Release\DesignTimeResolveAssemblyReferences.cache" />
-    <None Include="stock_crm\obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <None Include="stock_crm\obj\Release\stock_crm.csproj.GenerateResource.Cache" />
-    <None Include="stock_crm\obj\Release\stock_crm.csprojResolveAssemblyReference.cache" />
     <None Include="stock_crm\Properties\Settings.settings" />
   </ItemGroup>
   <ItemGroup>
@@ -364,15 +370,8 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="stock_crm\bin\Debug\stock_crm.vshost.exe" />
-    <Content Include="stock_crm\bin\Release\MySql.Data.dll" />
-    <Content Include="stock_crm\bin\Release\stock_crm.exe" />
-    <Content Include="stock_crm\bin\Release\stock_crm.pdb" />
-    <Content Include="stock_crm\bin\Release\stock_crm.vshost.exe" />
     <Content Include="stock_crm\obj\Debug\stock_crm.csproj.FileListAbsolute.txt" />
     <Content Include="stock_crm\obj\Release\stock_crm.csproj.FileListAbsolute.txt" />
-    <Content Include="stock_crm\obj\Release\stock_crm.exe" />
-    <Content Include="stock_crm\obj\Release\stock_crm.pdb" />
     <Content Include="stock_crm\stock_crm.csproj" />
   </ItemGroup>
   <ItemGroup>
@@ -380,8 +379,9 @@
     <Folder Include=".git\objects\info\" />
     <Folder Include=".git\objects\pack\" />
     <Folder Include=".git\refs\tags\" />
-    <Folder Include="stock_crm\obj\Debug\TempPE\" />
-    <Folder Include="stock_crm\obj\Release\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
   <ProjectExtensions>
