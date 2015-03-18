@@ -19,3 +19,29 @@ C:\Users\rodrigue\Documents\Visual Studio 2012\Projects\stock_crm\stock_crm\obj\
 C:\Users\rodrigue\Documents\Visual Studio 2012\Projects\stock_crm\stock_crm\obj\Debug\stock_crm.formulaire_proposition.resources
 C:\Users\rodrigue\Documents\Visual Studio 2012\Projects\stock_crm\stock_crm\obj\Debug\stock_crm.formulaire_user_supprimer.resources
 C:\Users\rodrigue\Documents\Visual Studio 2012\Projects\stock_crm\stock_crm\obj\Debug\stock_crm.formulaire_user_modifier.resources
+C:\Users\rodrigue\Documents\crmStock\stock_crm\bin\Debug\stock_crm.exe.config
+C:\Users\rodrigue\Documents\crmStock\stock_crm\bin\Debug\stock_crm.exe
+C:\Users\rodrigue\Documents\crmStock\stock_crm\bin\Debug\stock_crm.pdb
+C:\Users\rodrigue\Documents\crmStock\stock_crm\bin\Debug\MySql.Data.dll
+C:\Users\rodrigue\Documents\crmStock\stock_crm\obj\Debug\stock_crm.csprojResolveAssemblyReference.cache
+C:\Users\rodrigue\Documents\crmStock\stock_crm\obj\Debug\stock_crm.Accueil_form.resources
+C:\Users\rodrigue\Documents\crmStock\stock_crm\obj\Debug\stock_crm.assignationNouvCommercial.resources
+C:\Users\rodrigue\Documents\crmStock\stock_crm\obj\Debug\stock_crm.facture_form.resources
+C:\Users\rodrigue\Documents\crmStock\stock_crm\obj\Debug\stock_crm.top_info.resources
+C:\Users\rodrigue\Documents\crmStock\stock_crm\obj\Debug\stock_crm.consultation_commande_form.resources
+C:\Users\rodrigue\Documents\crmStock\stock_crm\obj\Debug\stock_crm.formulaire_contact_form.resources
+C:\Users\rodrigue\Documents\crmStock\stock_crm\obj\Debug\stock_crm.formulaire_proposition.resources
+C:\Users\rodrigue\Documents\crmStock\stock_crm\obj\Debug\stock_crm.formulaire_tiers_formcs.resources
+C:\Users\rodrigue\Documents\crmStock\stock_crm\obj\Debug\stock_crm.formulaire_user.resources
+C:\Users\rodrigue\Documents\crmStock\stock_crm\obj\Debug\stock_crm.formulaire_user_modifier.resources
+C:\Users\rodrigue\Documents\crmStock\stock_crm\obj\Debug\stock_crm.formulaire_user_supprimer.resources
+C:\Users\rodrigue\Documents\crmStock\stock_crm\obj\Debug\stock_crm.identificationForm.resources
+C:\Users\rodrigue\Documents\crmStock\stock_crm\obj\Debug\stock_crm.information_user.resources
+C:\Users\rodrigue\Documents\crmStock\stock_crm\obj\Debug\stock_crm.menu.resources
+C:\Users\rodrigue\Documents\crmStock\stock_crm\obj\Debug\stock_crm.modifier_tiers.resources
+C:\Users\rodrigue\Documents\crmStock\stock_crm\obj\Debug\stock_crm.modiier_contact.resources
+C:\Users\rodrigue\Documents\crmStock\stock_crm\obj\Debug\stock_crm.Properties.Resources.resources
+C:\Users\rodrigue\Documents\crmStock\stock_crm\obj\Debug\stock_crm.csproj.GenerateResource.Cache
+C:\Users\rodrigue\Documents\crmStock\stock_crm\obj\Debug\stock_crm.exe
+C:\Users\rodrigue\Documents\crmStock\stock_crm\obj\Debug\stock_crm.pdb
+C:\Users\rodrigue\Documents\crmStock\stock_crm\obj\Debug\stock_crm.action.resources

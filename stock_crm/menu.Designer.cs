@@ -48,6 +48,7 @@
             this.créerToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.consulterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelForm = new System.Windows.Forms.Panel();
+            this.historiqueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupPanel.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.menuStrip.SuspendLayout();
@@ -122,7 +123,7 @@
             this.commandeItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(691, 56);
+            this.menuStrip.Size = new System.Drawing.Size(783, 56);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "menuStrip1";
             // 
@@ -154,7 +155,7 @@
             // 
             this.créerToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.créerToolStripMenuItem.Name = "créerToolStripMenuItem";
-            this.créerToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.créerToolStripMenuItem.Size = new System.Drawing.Size(149, 24);
             this.créerToolStripMenuItem.Text = "Créer";
             this.créerToolStripMenuItem.Click += new System.EventHandler(this.créerToolStripMenuItem_Click);
             // 
@@ -162,7 +163,7 @@
             // 
             this.consulterToolStripMenuItem3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.consulterToolStripMenuItem3.Name = "consulterToolStripMenuItem3";
-            this.consulterToolStripMenuItem3.Size = new System.Drawing.Size(152, 24);
+            this.consulterToolStripMenuItem3.Size = new System.Drawing.Size(149, 24);
             this.consulterToolStripMenuItem3.Text = "Consulter";
             this.consulterToolStripMenuItem3.Click += new System.EventHandler(this.consulterToolStripMenuItem3_Click);
             // 
@@ -198,7 +199,8 @@
             // 
             this.contactItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.creerToolStripMenuItem1,
-            this.supprimerToolStripMenuItem2});
+            this.supprimerToolStripMenuItem2,
+            this.historiqueToolStripMenuItem});
             this.contactItem.Image = ((System.Drawing.Image)(resources.GetObject("contactItem.Image")));
             this.contactItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.contactItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -210,7 +212,7 @@
             // 
             this.creerToolStripMenuItem1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.creerToolStripMenuItem1.Name = "creerToolStripMenuItem1";
-            this.creerToolStripMenuItem1.Size = new System.Drawing.Size(149, 24);
+            this.creerToolStripMenuItem1.Size = new System.Drawing.Size(153, 24);
             this.creerToolStripMenuItem1.Text = "Créer";
             this.creerToolStripMenuItem1.Click += new System.EventHandler(this.creerToolStripMenuItem1_Click);
             // 
@@ -218,7 +220,7 @@
             // 
             this.supprimerToolStripMenuItem2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.supprimerToolStripMenuItem2.Name = "supprimerToolStripMenuItem2";
-            this.supprimerToolStripMenuItem2.Size = new System.Drawing.Size(149, 24);
+            this.supprimerToolStripMenuItem2.Size = new System.Drawing.Size(153, 24);
             this.supprimerToolStripMenuItem2.Text = "Consulter";
             this.supprimerToolStripMenuItem2.Click += new System.EventHandler(this.modifier_contact);
             // 
@@ -259,6 +261,14 @@
             this.panelForm.Size = new System.Drawing.Size(1128, 494);
             this.panelForm.TabIndex = 0;
             this.panelForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelForm_Paint);
+            // 
+            // historiqueToolStripMenuItem
+            // 
+            this.historiqueToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.historiqueToolStripMenuItem.Name = "historiqueToolStripMenuItem";
+            this.historiqueToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
+            this.historiqueToolStripMenuItem.Text = "Historique";
+            this.historiqueToolStripMenuItem.Click += new System.EventHandler(this.historiqueToolStripMenuItem_Click);
             // 
             // menu
             // 
@@ -302,6 +312,7 @@
         private System.Windows.Forms.Label nomUser;
         private System.Windows.Forms.Label roleUser;
         private System.Windows.Forms.ToolStripMenuItem accueilToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem historiqueToolStripMenuItem;
 
     }
 }

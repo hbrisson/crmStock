@@ -78,6 +78,42 @@ namespace stock_crm
             }
         }
 
+        public tiers SelectWhereTiersId(string champ, string table, string column_where, string value_where)
+        {
+            string query = "SELECT " + champ + " FROM " + table + " WHERE " + column_where + " = '" + value_where + "'";
+
+            //Create a list to store the result
+            tiers tiers = new tiers();
+
+            //Open connection
+            if (this.OpenConnection() == true)
+            {
+                //Create Command
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                //Create a data reader and Execute the command
+                MySqlDataReader dataReader = cmd.ExecuteReader();
+
+                //Read the data and store them in the list
+                while (dataReader.Read())
+                {
+                    tiers.Id = (int)dataReader["id"];
+                }
+
+                //close Data Reader
+                dataReader.Close();
+
+                //close Connection
+                this.CloseConnection();
+
+                //return list to be displayed
+                return tiers;
+            }
+            else
+            {
+                return tiers;
+            }
+        }
+
         //Update tiers
         public void UpdateTiers(tiers tiers)
         {

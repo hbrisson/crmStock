@@ -122,6 +122,55 @@ namespace stock_crm
              }
          }
 
+         public List<contact> SelectWhereContactList(string champ, string table, string column_where, string value_where)
+         {
+             string query = "SELECT " + champ + " FROM " + table + " WHERE " + column_where + " = '" + value_where + "'";
+
+             //Create a list to store the result
+             
+             List<contact> list_contact = new List<contact>();
+             //Open connection
+             if (this.OpenConnection() == true)
+             {
+                 //Create Command
+                 MySqlCommand cmd = new MySqlCommand(query, connection);
+                 //Create a data reader and Execute the command
+                 MySqlDataReader dataReader = cmd.ExecuteReader();
+
+                 //Read the data and store them in the list
+                 while (dataReader.Read())
+                 {
+                     contact contact = new contact();
+                     contact.Id = (int)dataReader["id"];
+                     contact.Idtiers = (int)dataReader["idtiers"];
+                     contact.Nom = (string)dataReader["nom"];
+                     contact.Prenom = (string)dataReader["prenom"];
+                     contact.Telephone = (string)dataReader["telephone"];
+                     contact.Portable = (string)dataReader["portable"];
+                     contact.Mail = (string)dataReader["mail"];
+                     DateTime date_ = (DateTime)dataReader["date_anniv"];
+                     contact.Date = Convert.ToString(date_);
+                     contact.Fonction = (string)dataReader["fonction"];
+                     contact.Commentaire = (string)dataReader["commentaire"];
+
+                     list_contact.Add(contact);
+                 }
+
+                 //close Data Reader
+                 dataReader.Close();
+
+                 //close Connection
+                 this.CloseConnection();
+
+                 //return list to be displayed
+                 return list_contact;
+             }
+             else
+             {
+                 return list_contact;
+             }
+         }
+
          //Select statement
          public List<string> Select(string champ, string table)
          {

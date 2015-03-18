@@ -29,8 +29,10 @@
         private void InitializeComponent()
         {
             this.panel_modifier_tiers = new System.Windows.Forms.Panel();
-            this.modifiers_tiers = new System.Windows.Forms.Button();
+            this.idtiers = new System.Windows.Forms.Label();
+            this.supprimer_tiers = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.modifiers_tiers = new System.Windows.Forms.Button();
             this.juridique_modifier_tiers = new System.Windows.Forms.ComboBox();
             this.commentaire_modifier_tiers = new System.Windows.Forms.TextBox();
             this.date_paiement_modifier_tiers = new System.Windows.Forms.DateTimePicker();
@@ -65,12 +67,12 @@
             this.nom_label = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.supprimer_tiers = new System.Windows.Forms.Button();
-            this.idtiers = new System.Windows.Forms.Label();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.panel_modifier_tiers.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_modifier_tiers
@@ -86,17 +88,27 @@
             this.panel_modifier_tiers.Size = new System.Drawing.Size(593, 458);
             this.panel_modifier_tiers.TabIndex = 0;
             // 
-            // modifiers_tiers
+            // idtiers
             // 
-            this.modifiers_tiers.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.modifiers_tiers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.modifiers_tiers.Location = new System.Drawing.Point(443, 237);
-            this.modifiers_tiers.Name = "modifiers_tiers";
-            this.modifiers_tiers.Size = new System.Drawing.Size(100, 23);
-            this.modifiers_tiers.TabIndex = 67;
-            this.modifiers_tiers.Text = "Modifier";
-            this.modifiers_tiers.UseVisualStyleBackColor = false;
-            this.modifiers_tiers.Click += new System.EventHandler(this.modifier_tiers_click);
+            this.idtiers.AutoSize = true;
+            this.idtiers.Location = new System.Drawing.Point(53, 427);
+            this.idtiers.Name = "idtiers";
+            this.idtiers.Size = new System.Drawing.Size(58, 20);
+            this.idtiers.TabIndex = 3;
+            this.idtiers.Text = "idtiers";
+            this.idtiers.Visible = false;
+            // 
+            // supprimer_tiers
+            // 
+            this.supprimer_tiers.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.supprimer_tiers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.supprimer_tiers.Location = new System.Drawing.Point(453, 427);
+            this.supprimer_tiers.Name = "supprimer_tiers";
+            this.supprimer_tiers.Size = new System.Drawing.Size(100, 23);
+            this.supprimer_tiers.TabIndex = 2;
+            this.supprimer_tiers.Text = "Supprimer";
+            this.supprimer_tiers.UseVisualStyleBackColor = false;
+            this.supprimer_tiers.Click += new System.EventHandler(this.supprimer_tiers_Click);
             // 
             // groupBox2
             // 
@@ -140,6 +152,18 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Informations du tiers séléctionné";
+            // 
+            // modifiers_tiers
+            // 
+            this.modifiers_tiers.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.modifiers_tiers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.modifiers_tiers.Location = new System.Drawing.Point(443, 237);
+            this.modifiers_tiers.Name = "modifiers_tiers";
+            this.modifiers_tiers.Size = new System.Drawing.Size(100, 23);
+            this.modifiers_tiers.TabIndex = 67;
+            this.modifiers_tiers.Text = "Modifier";
+            this.modifiers_tiers.UseVisualStyleBackColor = false;
+            this.modifiers_tiers.Click += new System.EventHandler(this.modifier_tiers_click);
             // 
             // juridique_modifier_tiers
             // 
@@ -655,6 +679,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.dataGridView2);
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
@@ -674,27 +699,13 @@
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
             // 
-            // supprimer_tiers
+            // dataGridView2
             // 
-            this.supprimer_tiers.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.supprimer_tiers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.supprimer_tiers.Location = new System.Drawing.Point(453, 427);
-            this.supprimer_tiers.Name = "supprimer_tiers";
-            this.supprimer_tiers.Size = new System.Drawing.Size(100, 23);
-            this.supprimer_tiers.TabIndex = 2;
-            this.supprimer_tiers.Text = "Supprimer";
-            this.supprimer_tiers.UseVisualStyleBackColor = false;
-            this.supprimer_tiers.Click += new System.EventHandler(this.supprimer_tiers_Click);
-            // 
-            // idtiers
-            // 
-            this.idtiers.AutoSize = true;
-            this.idtiers.Location = new System.Drawing.Point(53, 427);
-            this.idtiers.Name = "idtiers";
-            this.idtiers.Size = new System.Drawing.Size(58, 20);
-            this.idtiers.TabIndex = 3;
-            this.idtiers.Text = "idtiers";
-            this.idtiers.Visible = false;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(247, 88);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView2.TabIndex = 3;
             // 
             // modifier_tiers
             // 
@@ -714,6 +725,7 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -759,5 +771,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button supprimer_tiers;
         private System.Windows.Forms.Label idtiers;
+        private System.Windows.Forms.DataGridView dataGridView2;
     }
 }

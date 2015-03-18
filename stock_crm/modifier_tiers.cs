@@ -107,6 +107,7 @@ namespace stock_crm
                 if (juridique_value.Equals("SA"))
                 {
                     juridique_data = juridique.SA;
+                   
                 }
                 else if (juridique_value.Equals("SARL"))
                 {
@@ -144,9 +145,10 @@ namespace stock_crm
 
                 #endregion
 
+                //UPDATE TIERS
                 tiers tiers = new tiers(int_idtiers, nom, type.prospect, siret, juridique_data, reglement_data, adresse_livraison, adresse_facturation, pays, tva, code_naf, date, telephone, fax, site_web, commentaire, secteur, segment);
                 tiersConnect tiersConnect = new tiersConnect();
-                tiersConnect.UpdateTiers(tiers);
+                tiersConnect.UpdateTiers(tiers);              
 
                 MessageBox.Show("La modification a bien été effectué");
             }
