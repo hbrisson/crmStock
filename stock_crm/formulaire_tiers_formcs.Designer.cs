@@ -29,11 +29,6 @@
         private void InitializeComponent()
         {
             this.formulaire_tiers = new System.Windows.Forms.GroupBox();
-            this.Informations_tiers = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.date_rencontre_tiers = new System.Windows.Forms.DateTimePicker();
-            this.type_contact_tiers = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.juridique_tiers = new System.Windows.Forms.ComboBox();
             this.commentaire_tiers = new System.Windows.Forms.TextBox();
             this.date_paiement_tiers = new System.Windows.Forms.DateTimePicker();
@@ -69,14 +64,12 @@
             this.valider_tiers = new System.Windows.Forms.Button();
             this.panelTiers = new System.Windows.Forms.Panel();
             this.formulaire_tiers.SuspendLayout();
-            this.Informations_tiers.SuspendLayout();
             this.panelTiers.SuspendLayout();
             this.SuspendLayout();
             // 
             // formulaire_tiers
             // 
             this.formulaire_tiers.BackColor = System.Drawing.Color.White;
-            this.formulaire_tiers.Controls.Add(this.Informations_tiers);
             this.formulaire_tiers.Controls.Add(this.juridique_tiers);
             this.formulaire_tiers.Controls.Add(this.commentaire_tiers);
             this.formulaire_tiers.Controls.Add(this.date_paiement_tiers);
@@ -112,66 +105,10 @@
             this.formulaire_tiers.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.formulaire_tiers.Location = new System.Drawing.Point(13, 11);
             this.formulaire_tiers.Name = "formulaire_tiers";
-            this.formulaire_tiers.Size = new System.Drawing.Size(875, 244);
+            this.formulaire_tiers.Size = new System.Drawing.Size(875, 261);
             this.formulaire_tiers.TabIndex = 2;
             this.formulaire_tiers.TabStop = false;
             this.formulaire_tiers.Text = "Création d\'un tiers";
-            // 
-            // Informations_tiers
-            // 
-            this.Informations_tiers.Controls.Add(this.label2);
-            this.Informations_tiers.Controls.Add(this.date_rencontre_tiers);
-            this.Informations_tiers.Controls.Add(this.type_contact_tiers);
-            this.Informations_tiers.Controls.Add(this.label1);
-            this.Informations_tiers.Location = new System.Drawing.Point(567, 19);
-            this.Informations_tiers.Name = "Informations_tiers";
-            this.Informations_tiers.Size = new System.Drawing.Size(298, 95);
-            this.Informations_tiers.TabIndex = 38;
-            this.Informations_tiers.TabStop = false;
-            this.Informations_tiers.Text = "Informations";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.label2.Location = new System.Drawing.Point(6, 57);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 16);
-            this.label2.TabIndex = 38;
-            this.label2.Text = "Date de rencontre :*";
-            // 
-            // date_rencontre_tiers
-            // 
-            this.date_rencontre_tiers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.date_rencontre_tiers.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.date_rencontre_tiers.Location = new System.Drawing.Point(138, 57);
-            this.date_rencontre_tiers.Name = "date_rencontre_tiers";
-            this.date_rencontre_tiers.Size = new System.Drawing.Size(147, 20);
-            this.date_rencontre_tiers.TabIndex = 18;
-            // 
-            // type_contact_tiers
-            // 
-            this.type_contact_tiers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.type_contact_tiers.FormattingEnabled = true;
-            this.type_contact_tiers.Items.AddRange(new object[] {
-            "Rendez-vous",
-            "Contact téléphonique",
-            "Rappel",
-            "Travail à fournir"});
-            this.type_contact_tiers.Location = new System.Drawing.Point(138, 30);
-            this.type_contact_tiers.Name = "type_contact_tiers";
-            this.type_contact_tiers.Size = new System.Drawing.Size(147, 21);
-            this.type_contact_tiers.TabIndex = 17;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.label1.Location = new System.Drawing.Point(16, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 16);
-            this.label1.TabIndex = 36;
-            this.label1.Text = "Type de contact :*";
             // 
             // juridique_tiers
             // 
@@ -182,7 +119,7 @@
             "SA",
             "SARL",
             "SAS"});
-            this.juridique_tiers.Location = new System.Drawing.Point(176, 80);
+            this.juridique_tiers.Location = new System.Drawing.Point(176, 54);
             this.juridique_tiers.Name = "juridique_tiers";
             this.juridique_tiers.Size = new System.Drawing.Size(100, 21);
             this.juridique_tiers.TabIndex = 3;
@@ -190,17 +127,17 @@
             // commentaire_tiers
             // 
             this.commentaire_tiers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.commentaire_tiers.Location = new System.Drawing.Point(461, 159);
+            this.commentaire_tiers.Location = new System.Drawing.Point(337, 178);
             this.commentaire_tiers.Multiline = true;
             this.commentaire_tiers.Name = "commentaire_tiers";
-            this.commentaire_tiers.Size = new System.Drawing.Size(100, 20);
+            this.commentaire_tiers.Size = new System.Drawing.Size(308, 77);
             this.commentaire_tiers.TabIndex = 14;
             // 
             // date_paiement_tiers
             // 
             this.date_paiement_tiers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.date_paiement_tiers.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.date_paiement_tiers.Location = new System.Drawing.Point(461, 55);
+            this.date_paiement_tiers.Location = new System.Drawing.Point(750, 108);
             this.date_paiement_tiers.Name = "date_paiement_tiers";
             this.date_paiement_tiers.Size = new System.Drawing.Size(100, 20);
             this.date_paiement_tiers.TabIndex = 10;
@@ -232,7 +169,7 @@
             "20.4",
             "5.5",
             "3.2"});
-            this.tva_tiers.Location = new System.Drawing.Point(176, 186);
+            this.tva_tiers.Location = new System.Drawing.Point(176, 107);
             this.tva_tiers.Name = "tva_tiers";
             this.tva_tiers.Size = new System.Drawing.Size(100, 21);
             this.tva_tiers.TabIndex = 7;
@@ -440,7 +377,7 @@
             "Yougoslavie",
             "Zambie",
             "Zimbabwe"});
-            this.pays_tiers.Location = new System.Drawing.Point(176, 159);
+            this.pays_tiers.Location = new System.Drawing.Point(176, 80);
             this.pays_tiers.Name = "pays_tiers";
             this.pays_tiers.Size = new System.Drawing.Size(100, 21);
             this.pays_tiers.TabIndex = 6;
@@ -448,7 +385,7 @@
             // secteur_activite_tiers
             // 
             this.secteur_activite_tiers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.secteur_activite_tiers.Location = new System.Drawing.Point(461, 213);
+            this.secteur_activite_tiers.Location = new System.Drawing.Point(176, 135);
             this.secteur_activite_tiers.Name = "secteur_activite_tiers";
             this.secteur_activite_tiers.Size = new System.Drawing.Size(100, 20);
             this.secteur_activite_tiers.TabIndex = 16;
@@ -456,7 +393,7 @@
             // segment_activite_tiers
             // 
             this.segment_activite_tiers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.segment_activite_tiers.Location = new System.Drawing.Point(461, 187);
+            this.segment_activite_tiers.Location = new System.Drawing.Point(461, 135);
             this.segment_activite_tiers.Name = "segment_activite_tiers";
             this.segment_activite_tiers.Size = new System.Drawing.Size(100, 20);
             this.segment_activite_tiers.TabIndex = 15;
@@ -475,7 +412,7 @@
             // 
             this.fax_label.AutoSize = true;
             this.fax_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.fax_label.Location = new System.Drawing.Point(410, 108);
+            this.fax_label.Location = new System.Drawing.Point(699, 84);
             this.fax_label.Name = "fax_label";
             this.fax_label.Size = new System.Drawing.Size(39, 16);
             this.fax_label.TabIndex = 24;
@@ -484,7 +421,7 @@
             // adresse_livraison_tiers
             // 
             this.adresse_livraison_tiers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.adresse_livraison_tiers.Location = new System.Drawing.Point(176, 107);
+            this.adresse_livraison_tiers.Location = new System.Drawing.Point(461, 55);
             this.adresse_livraison_tiers.Name = "adresse_livraison_tiers";
             this.adresse_livraison_tiers.Size = new System.Drawing.Size(100, 20);
             this.adresse_livraison_tiers.TabIndex = 4;
@@ -493,7 +430,7 @@
             // 
             this.site_web_label.AutoSize = true;
             this.site_web_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.site_web_label.Location = new System.Drawing.Point(384, 134);
+            this.site_web_label.Location = new System.Drawing.Point(673, 135);
             this.site_web_label.Name = "site_web_label";
             this.site_web_label.Size = new System.Drawing.Size(65, 16);
             this.site_web_label.TabIndex = 23;
@@ -503,7 +440,7 @@
             // 
             this.commentaire_label.AutoSize = true;
             this.commentaire_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.commentaire_label.Location = new System.Drawing.Point(355, 160);
+            this.commentaire_label.Location = new System.Drawing.Point(231, 179);
             this.commentaire_label.Name = "commentaire_label";
             this.commentaire_label.Size = new System.Drawing.Size(94, 16);
             this.commentaire_label.TabIndex = 22;
@@ -513,7 +450,7 @@
             // 
             this.secteur_activite_label.AutoSize = true;
             this.secteur_activite_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.secteur_activite_label.Location = new System.Drawing.Point(332, 214);
+            this.secteur_activite_label.Location = new System.Drawing.Point(47, 136);
             this.secteur_activite_label.Name = "secteur_activite_label";
             this.secteur_activite_label.Size = new System.Drawing.Size(121, 16);
             this.secteur_activite_label.TabIndex = 21;
@@ -523,7 +460,7 @@
             // 
             this.segment_activite_label.AutoSize = true;
             this.segment_activite_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.segment_activite_label.Location = new System.Drawing.Point(324, 187);
+            this.segment_activite_label.Location = new System.Drawing.Point(324, 135);
             this.segment_activite_label.Name = "segment_activite_label";
             this.segment_activite_label.Size = new System.Drawing.Size(129, 16);
             this.segment_activite_label.TabIndex = 19;
@@ -532,7 +469,7 @@
             // naf_tiers
             // 
             this.naf_tiers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.naf_tiers.Location = new System.Drawing.Point(176, 213);
+            this.naf_tiers.Location = new System.Drawing.Point(461, 108);
             this.naf_tiers.Name = "naf_tiers";
             this.naf_tiers.Size = new System.Drawing.Size(100, 20);
             this.naf_tiers.TabIndex = 8;
@@ -540,7 +477,7 @@
             // siret_tiers
             // 
             this.siret_tiers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.siret_tiers.Location = new System.Drawing.Point(176, 54);
+            this.siret_tiers.Location = new System.Drawing.Point(750, 30);
             this.siret_tiers.Name = "siret_tiers";
             this.siret_tiers.Size = new System.Drawing.Size(100, 20);
             this.siret_tiers.TabIndex = 2;
@@ -556,7 +493,7 @@
             // fax_tiers
             // 
             this.fax_tiers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.fax_tiers.Location = new System.Drawing.Point(461, 107);
+            this.fax_tiers.Location = new System.Drawing.Point(750, 83);
             this.fax_tiers.Name = "fax_tiers";
             this.fax_tiers.Size = new System.Drawing.Size(100, 20);
             this.fax_tiers.TabIndex = 12;
@@ -564,7 +501,7 @@
             // adresse_facturation_tiers
             // 
             this.adresse_facturation_tiers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.adresse_facturation_tiers.Location = new System.Drawing.Point(176, 133);
+            this.adresse_facturation_tiers.Location = new System.Drawing.Point(750, 56);
             this.adresse_facturation_tiers.Name = "adresse_facturation_tiers";
             this.adresse_facturation_tiers.Size = new System.Drawing.Size(100, 20);
             this.adresse_facturation_tiers.TabIndex = 5;
@@ -572,7 +509,7 @@
             // site_web_tiers
             // 
             this.site_web_tiers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.site_web_tiers.Location = new System.Drawing.Point(461, 133);
+            this.site_web_tiers.Location = new System.Drawing.Point(750, 134);
             this.site_web_tiers.Name = "site_web_tiers";
             this.site_web_tiers.Size = new System.Drawing.Size(100, 20);
             this.site_web_tiers.TabIndex = 13;
@@ -581,7 +518,7 @@
             // 
             this.naf_label.AutoSize = true;
             this.naf_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.naf_label.Location = new System.Drawing.Point(88, 214);
+            this.naf_label.Location = new System.Drawing.Point(373, 109);
             this.naf_label.Name = "naf_label";
             this.naf_label.Size = new System.Drawing.Size(82, 16);
             this.naf_label.TabIndex = 10;
@@ -591,7 +528,7 @@
             // 
             this.tva_label.AutoSize = true;
             this.tva_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.tva_label.Location = new System.Drawing.Point(122, 187);
+            this.tva_label.Location = new System.Drawing.Point(122, 108);
             this.tva_label.Name = "tva_label";
             this.tva_label.Size = new System.Drawing.Size(46, 16);
             this.tva_label.TabIndex = 9;
@@ -602,7 +539,7 @@
             this.pays_label.AutoEllipsis = true;
             this.pays_label.AutoSize = true;
             this.pays_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.pays_label.Location = new System.Drawing.Point(118, 160);
+            this.pays_label.Location = new System.Drawing.Point(118, 81);
             this.pays_label.Name = "pays_label";
             this.pays_label.Size = new System.Drawing.Size(50, 16);
             this.pays_label.TabIndex = 8;
@@ -622,7 +559,7 @@
             // 
             this.date_paiement_label.AutoSize = true;
             this.date_paiement_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.date_paiement_label.Location = new System.Drawing.Point(282, 55);
+            this.date_paiement_label.Location = new System.Drawing.Point(571, 108);
             this.date_paiement_label.Name = "date_paiement_label";
             this.date_paiement_label.Size = new System.Drawing.Size(173, 16);
             this.date_paiement_label.TabIndex = 6;
@@ -632,7 +569,7 @@
             // 
             this.adresse_facturation_label.AutoSize = true;
             this.adresse_facturation_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.adresse_facturation_label.Location = new System.Drawing.Point(15, 134);
+            this.adresse_facturation_label.Location = new System.Drawing.Point(589, 57);
             this.adresse_facturation_label.Name = "adresse_facturation_label";
             this.adresse_facturation_label.Size = new System.Drawing.Size(153, 16);
             this.adresse_facturation_label.TabIndex = 5;
@@ -642,7 +579,7 @@
             // 
             this.adresse_livraison_label.AutoSize = true;
             this.adresse_livraison_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.adresse_livraison_label.Location = new System.Drawing.Point(26, 108);
+            this.adresse_livraison_label.Location = new System.Drawing.Point(311, 56);
             this.adresse_livraison_label.Name = "adresse_livraison_label";
             this.adresse_livraison_label.Size = new System.Drawing.Size(142, 16);
             this.adresse_livraison_label.TabIndex = 4;
@@ -652,7 +589,7 @@
             // 
             this.juridique_label.AutoSize = true;
             this.juridique_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.juridique_label.Location = new System.Drawing.Point(56, 81);
+            this.juridique_label.Location = new System.Drawing.Point(56, 55);
             this.juridique_label.Name = "juridique_label";
             this.juridique_label.Size = new System.Drawing.Size(112, 16);
             this.juridique_label.TabIndex = 3;
@@ -662,7 +599,7 @@
             // 
             this.siret_label.AutoSize = true;
             this.siret_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.siret_label.Location = new System.Drawing.Point(56, 55);
+            this.siret_label.Location = new System.Drawing.Point(630, 31);
             this.siret_label.Name = "siret_label";
             this.siret_label.Size = new System.Drawing.Size(114, 16);
             this.siret_label.TabIndex = 2;
@@ -721,8 +658,6 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.formulaire_tiers.ResumeLayout(false);
             this.formulaire_tiers.PerformLayout();
-            this.Informations_tiers.ResumeLayout(false);
-            this.Informations_tiers.PerformLayout();
             this.panelTiers.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -764,11 +699,6 @@
         private System.Windows.Forms.TextBox telephone_tiers;
         private System.Windows.Forms.Label nom_label;
         private System.Windows.Forms.ComboBox juridique_tiers;
-        private System.Windows.Forms.GroupBox Informations_tiers;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker date_rencontre_tiers;
-        private System.Windows.Forms.ComboBox type_contact_tiers;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelTiers;
 
     }

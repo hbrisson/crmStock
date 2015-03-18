@@ -21,7 +21,9 @@ namespace stock_crm
             if (commande.Type == type_action.proposition)
             {
                 commande.Etat_prop = commande.getEtatProp(etat);
-            }else{
+            }
+            else
+            {
                 commande.Etat_commande = commande.getEtatCommande(etat);
             }
 
@@ -35,12 +37,12 @@ namespace stock_crm
         public void gestionCommande(commandeProduit commandeProduit)
         {
             insertCommandeProduit(commandeProduit);
-            updateProduit(commandeProduit.Quantite,commandeProduit.Idproduit,"-");
+            updateProduit(commandeProduit.Quantite, commandeProduit.Idproduit, "-");
         }
 
         public void insertCommande(commande commande)
         {
-            string query = "INSERT INTO commande VALUES(null,'" + commande.Idtiers + "','" + commande.Type + "','" + commande.Etat_prop + "','" + commande.Date + "','" + commande.Montant.ToString().Replace(",",".") + "','" + commande.Commentaire + "')";
+            string query = "INSERT INTO commande VALUES(null,'" + commande.Idtiers + "','" + commande.Type + "','" + commande.Etat_prop + "','" + commande.Date + "','" + commande.Montant.ToString().Replace(",", ".") + "','" + commande.Commentaire + "')";
 
             //open connection
             if (this.OpenConnection() == true)
@@ -58,7 +60,7 @@ namespace stock_crm
 
         public int getIdCommande(int idTiers)
         {
-             string query = "SELECT id FROM commande Where idtiers='" + idTiers + "' Order by id DESC limit 1";
+            string query = "SELECT id FROM commande Where idtiers='" + idTiers + "' Order by id DESC limit 1";
 
             //Create a list to store the result
             commande commande = new commande();
@@ -110,7 +112,8 @@ namespace stock_crm
             }
         }
 
-        public void updateProduit (int qte , int idProduit,string operateur){
+        public void updateProduit(int qte, int idProduit, string operateur)
+        {
 
             string query = "UPDATE produit SET quantite = quantite " + operateur + " '" + qte + "' WHERE id = '" + idProduit + "'";
 
@@ -130,19 +133,22 @@ namespace stock_crm
                 //close connection
                 this.CloseConnection();
             }
-            
+
         }
 
         public void updateCommande(commande commande)
         {
             string query;
-                if(commande.Type.Equals(type_action.commande)){
-                    query = "UPDATE commande SET type = '" + commande.Type + "' , etat ='" + commande.Etat_commande.ToString().Replace("_", " ") + "', date ='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "' , montant ='" + commande.Montant.ToString().Replace(",", ".") + "' , commentaire = '" + commande.Commentaire + "' WHERE id = '" + commande.Id + "'";
+            if (commande.Type.Equals(type_action.commande))
+            {
+                query = "UPDATE commande SET type = '" + commande.Type + "' , etat ='" + commande.Etat_commande.ToString().Replace("_", " ") + "', date ='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "' , montant ='" + commande.Montant.ToString().Replace(",", ".") + "' , commentaire = '" + commande.Commentaire + "' WHERE id = '" + commande.Id + "'";
 
-                }else{
-                    query = "UPDATE commande SET type = '" + commande.Type + "' , etat ='" + commande.Etat_prop.ToString().Replace("_", " ") + "', date ='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "' , montant ='" + commande.Montant.ToString().Replace(",", ".") + "' , commentaire = '" + commande.Commentaire + "' WHERE id = '" + commande.Id + "'";
-                }
-           
+            }
+            else
+            {
+                query = "UPDATE commande SET type = '" + commande.Type + "' , etat ='" + commande.Etat_prop.ToString().Replace("_", " ") + "', date ='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "' , montant ='" + commande.Montant.ToString().Replace(",", ".") + "' , commentaire = '" + commande.Commentaire + "' WHERE id = '" + commande.Id + "'";
+            }
+
             //Open connection
             if (this.OpenConnection() == true)
             {
@@ -163,7 +169,7 @@ namespace stock_crm
 
         public void updateCommandeProduit(commandeProduit commandeProduit)
         {
-            string query = "UPDATE commandeproduit SET quantite = '"+commandeProduit.Quantite+"' where idcommande ='"+commandeProduit.Idcommand+"' and idproduit ='"+commandeProduit.Idproduit+"'";
+            string query = "UPDATE commandeproduit SET quantite = '" + commandeProduit.Quantite + "' where idcommande ='" + commandeProduit.Idcommand + "' and idproduit ='" + commandeProduit.Idproduit + "'";
 
             //Open connection
             if (this.OpenConnection() == true)
@@ -185,7 +191,7 @@ namespace stock_crm
 
         public void updateTiers(tiers tiers)
         {
-            string query = "UPDATE tiers SET type =  '" + type.client +"' WHERE id = '" + tiers.Id + "'";
+            string query = "UPDATE tiers SET type =  '" + type.client + "' WHERE id = '" + tiers.Id + "'";
 
             //Open connection
             if (this.OpenConnection() == true)
@@ -207,7 +213,7 @@ namespace stock_crm
 
         public void deleteCommandeProduit(commandeProduit commandeProduit)
         {
-            string query = "Delete From commandeproduit WHERE idcommande = '" + commandeProduit.Idcommand+ "' and idproduit ='"+commandeProduit.Idproduit+"'";
+            string query = "Delete From commandeproduit WHERE idcommande = '" + commandeProduit.Idcommand + "' and idproduit ='" + commandeProduit.Idproduit + "'";
 
             //Open connection
             if (this.OpenConnection() == true)
@@ -226,10 +232,10 @@ namespace stock_crm
                 this.CloseConnection();
             }
         }
-        
+
         public List<commandeProduit> getCommandeProduitsByID(int id)
         {
-            string query = "SELECT * FROM commandeproduit Where idcommande = '"+id+"'";
+            string query = "SELECT * FROM commandeproduit Where idcommande = '" + id + "'";
 
             //Create a list to store the result
             List<commandeProduit> listCommandeProduit = new List<commandeProduit>();
@@ -271,7 +277,7 @@ namespace stock_crm
 
         public commande getCommandeByID(int id)
         {
-            string query = "SELECT * FROM commande Where id ='"+id+"'";
+            string query = "SELECT * FROM commande Where id ='" + id + "'";
 
             //Create a list to store the result
             commande commande = new commande();
@@ -305,7 +311,110 @@ namespace stock_crm
             }
         }
 
+        public List<string> getCommandeCountAndSumByID(tiers tiers, Boolean isNegoc)
+        {
+            string query;
 
+            if (isNegoc)
+            {
+                query = "Select COUNT(c.id) AS total,SUM(c.montant) AS montant_total from commande c ,usertiers ut,tiers t where c.idtiers = t.id and t.id = ut.idtiers and ut.idusers = '" + Toolbox.userSession.Id + "'  And c.type ='proposition' and c.etat not like '%refu%' and t.id=" + tiers.Id + "";
+
+            }
+            else
+            {
+                query = "Select COUNT(c.id) AS total,SUM(c.montant) AS montant_total from commande c ,usertiers ut,tiers t where c.idtiers = t.id and t.id = ut.idtiers and ut.idusers = '" + Toolbox.userSession.Id + "' And c.type ='commande' And c.etat != 'à facturer' and t.id=" + tiers.Id + "";
+
+            }
+
+
+            //Create a list to store the result
+            List<string> listString = new List<string>();
+
+            //Open connection
+            if (this.OpenConnection() == true)
+            {
+                //Create Command
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                //Create a data reader and Execute the command
+                MySqlDataReader dataReader = cmd.ExecuteReader();
+
+                //Read the data and store them in the list
+                while (dataReader.Read())
+                {
+                    listString.Add(Convert.ToString((long)dataReader["total"]));
+                    listString.Add(Convert.ToString((double)dataReader["montant_total"]));
+                }
+
+                //close Data Reader
+                dataReader.Close();
+
+                //close Connection
+                this.CloseConnection();
+
+                //return list to be displayed
+                return listString;
+            }
+            else
+            {
+                return listString;
+            }
+        }
+
+        public List<string> getCommandeSumByID(tiers tiers, Boolean isNegoc)
+        {
+            string query;
+
+            if (isNegoc)
+            {
+                query = "Select SUM(c.montant) AS montant_total from commande c ,usertiers ut,tiers t where c.idtiers = t.id and t.id = ut.idtiers and ut.idusers = '" + Toolbox.userSession.Id + "'  And c.type ='proposition' and c.etat like '%refu%' and t.id=" + tiers.Id + "";
+
+            }
+            else
+            {
+                query = "Select SUM(c.montant) AS montant_total from commande c ,usertiers ut,tiers t where c.idtiers = t.id and t.id = ut.idtiers and ut.idusers = '" + Toolbox.userSession.Id + "' And c.type ='commande' And c.etat = 'à facturer' and t.id=" + tiers.Id + "";
+
+            }
+
+
+            //Create a list to store the result
+            List<string> listString = new List<string>();
+
+            //Open connection
+            if (this.OpenConnection() == true)
+            {
+                //Create Command
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                //Create a data reader and Execute the command
+                MySqlDataReader dataReader = cmd.ExecuteReader();
+
+                //Read the data and store them in the list
+                while (dataReader.Read())
+                {
+                    try
+                    {
+                        listString.Add(Convert.ToString((double)dataReader["montant_total"]));
+                    }
+                    catch (Exception ex)
+                    {
+                        return listString;
+                    }
+
+                }
+
+                //close Data Reader
+                dataReader.Close();
+
+                //close Connection
+                this.CloseConnection();
+
+                //return list to be displayed
+                return listString;
+            }
+            else
+            {
+                return listString;
+            }
         }
     }
+}
 

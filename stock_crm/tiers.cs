@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace stock_crm
 {
-    public enum juridique {SA,SARL,SAS };
-    public enum reglement{virement,cheque,carteBancaire};
-    public enum type {prospect,client};
-    
-    class tiers
+    public enum juridique { SA, SARL, SAS };
+    public enum reglement { virement, cheque, carteBancaire };
+    public enum type { prospect, client };
+
+     public partial class tiers
     {
         private int id;
         private string nom;
@@ -22,7 +22,7 @@ namespace stock_crm
         private string adresse_facturation;
         private string pays;
         private string numero_tva;
-        private string code_naf;     
+        private string code_naf;
         private string delai_paiement;
         private string telephone;
         private string fax;
@@ -33,10 +33,10 @@ namespace stock_crm
 
         public tiers()
         {
-            
+
         }
 
-        public tiers(int id, string Nom, type Type, string Siret, juridique Juridique,reglement Reglement, string Adresse_livraison, string Adresse_facturation, string Pays, string Numero_tva, string Code_naf, string Delai_paiement, string Telephone, string Fax, string Site_web, string Commentaire, string Secteur, string Segment)
+        public tiers(int id, string Nom, type Type, string Siret, juridique Juridique, reglement Reglement, string Adresse_livraison, string Adresse_facturation, string Pays, string Numero_tva, string Code_naf, string Delai_paiement, string Telephone, string Fax, string Site_web, string Commentaire, string Secteur, string Segment)
         {
             this.id = id;
             this.nom = Nom;
@@ -199,5 +199,5 @@ namespace stock_crm
 
             return null;
         }
-    }      
+    }
 }

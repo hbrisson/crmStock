@@ -27,7 +27,6 @@ namespace stock_crm
             reglement_tiers.SelectedIndex = 0;
             tva_tiers.SelectedIndex = 0;
             pays_tiers.SelectedIndex = 0;
-            type_contact_tiers.SelectedIndex = 0;
         }
 
         //On insére le nouveau tiers dans la BDD
@@ -50,7 +49,7 @@ namespace stock_crm
                 string commentaire = commentaire_tiers.Text;
                 string secteur = secteur_activite_tiers.Text;
                 string segment = segment_activite_tiers.Text;
-                DateTime date_etat = date_rencontre_tiers.Value;
+                DateTime date_etat = DateTime.Now;
                 string date_rencontre_ = date_etat.ToString("yyyy-MM-dd HH:mm:ss");
                 #endregion
 
@@ -90,7 +89,7 @@ namespace stock_crm
                 }
 
                 //On récupére la valeur du type de contact
-                var type_contact_tiers_ = type_contact_tiers.SelectedItem;
+                var type_contact_tiers_ = "";
                 etat contact_tiers_enum;
 
                 if (type_contact_tiers_.Equals("Rendez-vous"))

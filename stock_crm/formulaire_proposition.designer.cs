@@ -73,10 +73,10 @@
             // panelCommande
             // 
             this.panelCommande.Controls.Add(this.label5);
+            this.panelCommande.Controls.Add(this.groupBox1);
             this.panelCommande.Controls.Add(this.commentaire_txb);
             this.panelCommande.Controls.Add(this.commandeValid);
             this.panelCommande.Controls.Add(this.groupBox2);
-            this.panelCommande.Controls.Add(this.groupBox1);
             this.panelCommande.Location = new System.Drawing.Point(12, 12);
             this.panelCommande.Name = "panelCommande";
             this.panelCommande.Size = new System.Drawing.Size(937, 417);
@@ -85,10 +85,10 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(450, 315);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(468, 317);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(119, 18);
+            this.label5.Size = new System.Drawing.Size(101, 15);
             this.label5.TabIndex = 12;
             this.label5.Text = "Commentaire :";
             // 
@@ -121,13 +121,13 @@
             this.groupBox2.Controls.Add(this.valider_btn);
             this.groupBox2.Controls.Add(this.quantite_cb);
             this.groupBox2.Controls.Add(this.produit_cb);
-            this.groupBox2.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(3, 3);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(409, 374);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Création d\'un commande";
+            this.groupBox2.Text = "Création d\'une commande";
             // 
             // label8
             // 
@@ -158,60 +158,60 @@
             // tiers_lbl
             // 
             this.tiers_lbl.AutoSize = true;
-            this.tiers_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
-            this.tiers_lbl.Location = new System.Drawing.Point(18, 33);
+            this.tiers_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tiers_lbl.Location = new System.Drawing.Point(26, 33);
             this.tiers_lbl.Name = "tiers_lbl";
-            this.tiers_lbl.Size = new System.Drawing.Size(115, 18);
+            this.tiers_lbl.Size = new System.Drawing.Size(97, 15);
             this.tiers_lbl.TabIndex = 0;
             this.tiers_lbl.Text = "Nom du tiers :";
             // 
             // tiers_resulat_lbl
             // 
             this.tiers_resulat_lbl.AutoSize = true;
-            this.tiers_resulat_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
-            this.tiers_resulat_lbl.Location = new System.Drawing.Point(139, 33);
+            this.tiers_resulat_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tiers_resulat_lbl.Location = new System.Drawing.Point(136, 33);
             this.tiers_resulat_lbl.Name = "tiers_resulat_lbl";
-            this.tiers_resulat_lbl.Size = new System.Drawing.Size(115, 18);
+            this.tiers_resulat_lbl.Size = new System.Drawing.Size(83, 15);
             this.tiers_resulat_lbl.TabIndex = 7;
             this.tiers_resulat_lbl.Text = "Nom du tiers :";
             // 
             // quantite_lbl
             // 
             this.quantite_lbl.AutoSize = true;
-            this.quantite_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
+            this.quantite_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quantite_lbl.Location = new System.Drawing.Point(52, 62);
             this.quantite_lbl.Name = "quantite_lbl";
-            this.quantite_lbl.Size = new System.Drawing.Size(81, 18);
+            this.quantite_lbl.Size = new System.Drawing.Size(69, 15);
             this.quantite_lbl.TabIndex = 2;
             this.quantite_lbl.Text = "Quantité :";
             // 
             // quantite_resultat_lbl
             // 
             this.quantite_resultat_lbl.AutoSize = true;
-            this.quantite_resultat_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
+            this.quantite_resultat_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quantite_resultat_lbl.Location = new System.Drawing.Point(136, 62);
             this.quantite_resultat_lbl.Name = "quantite_resultat_lbl";
-            this.quantite_resultat_lbl.Size = new System.Drawing.Size(115, 18);
+            this.quantite_resultat_lbl.Size = new System.Drawing.Size(83, 15);
             this.quantite_resultat_lbl.TabIndex = 10;
             this.quantite_resultat_lbl.Text = "Nom du tiers :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(54, 89);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 18);
+            this.label2.Size = new System.Drawing.Size(67, 15);
             this.label2.TabIndex = 4;
             this.label2.Text = "Montant :";
             // 
             // montant_resultat_lbl
             // 
             this.montant_resultat_lbl.AutoSize = true;
-            this.montant_resultat_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
-            this.montant_resultat_lbl.Location = new System.Drawing.Point(134, 89);
+            this.montant_resultat_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.montant_resultat_lbl.Location = new System.Drawing.Point(136, 89);
             this.montant_resultat_lbl.Name = "montant_resultat_lbl";
-            this.montant_resultat_lbl.Size = new System.Drawing.Size(115, 18);
+            this.montant_resultat_lbl.Size = new System.Drawing.Size(83, 15);
             this.montant_resultat_lbl.TabIndex = 11;
             this.montant_resultat_lbl.Text = "Nom du tiers :";
             // 
@@ -234,60 +234,60 @@
             // qte_dispo_lbl
             // 
             this.qte_dispo_lbl.AutoSize = true;
-            this.qte_dispo_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
+            this.qte_dispo_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.qte_dispo_lbl.Location = new System.Drawing.Point(133, 92);
             this.qte_dispo_lbl.Name = "qte_dispo_lbl";
-            this.qte_dispo_lbl.Size = new System.Drawing.Size(115, 18);
+            this.qte_dispo_lbl.Size = new System.Drawing.Size(83, 15);
             this.qte_dispo_lbl.TabIndex = 10;
             this.qte_dispo_lbl.Text = "Nom du tiers :";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
-            this.label15.Location = new System.Drawing.Point(6, 92);
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(20, 92);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(127, 18);
+            this.label15.Size = new System.Drawing.Size(108, 15);
             this.label15.TabIndex = 2;
             this.label15.Text = "Quantité dispo :";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
-            this.label16.Location = new System.Drawing.Point(26, 60);
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(33, 60);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(107, 18);
+            this.label16.Size = new System.Drawing.Size(93, 15);
             this.label16.TabIndex = 6;
             this.label16.Text = "Prix unitaire :";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
-            this.label17.Location = new System.Drawing.Point(58, 28);
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(65, 28);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(72, 18);
+            this.label17.Size = new System.Drawing.Size(61, 15);
             this.label17.TabIndex = 1;
             this.label17.Text = "Produit :";
             // 
             // produit_resultat_lbl
             // 
             this.produit_resultat_lbl.AutoSize = true;
-            this.produit_resultat_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
-            this.produit_resultat_lbl.Location = new System.Drawing.Point(136, 28);
+            this.produit_resultat_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.produit_resultat_lbl.Location = new System.Drawing.Point(133, 28);
             this.produit_resultat_lbl.Name = "produit_resultat_lbl";
-            this.produit_resultat_lbl.Size = new System.Drawing.Size(115, 18);
+            this.produit_resultat_lbl.Size = new System.Drawing.Size(83, 15);
             this.produit_resultat_lbl.TabIndex = 8;
             this.produit_resultat_lbl.Text = "Nom du tiers :";
             // 
             // prix_unit_resultat_lbl
             // 
             this.prix_unit_resultat_lbl.AutoSize = true;
-            this.prix_unit_resultat_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
-            this.prix_unit_resultat_lbl.Location = new System.Drawing.Point(136, 60);
+            this.prix_unit_resultat_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prix_unit_resultat_lbl.Location = new System.Drawing.Point(133, 60);
             this.prix_unit_resultat_lbl.Name = "prix_unit_resultat_lbl";
-            this.prix_unit_resultat_lbl.Size = new System.Drawing.Size(115, 18);
+            this.prix_unit_resultat_lbl.Size = new System.Drawing.Size(83, 15);
             this.prix_unit_resultat_lbl.TabIndex = 9;
             this.prix_unit_resultat_lbl.Text = "Nom du tiers :";
             // 
@@ -345,8 +345,8 @@
             this.groupBox1.Controls.Add(this.tva_resultat_lbl);
             this.groupBox1.Controls.Add(this.tva_lbl);
             this.groupBox1.Controls.Add(this.montant_total_);
-            this.groupBox1.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(418, 4);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(432, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(502, 306);
             this.groupBox1.TabIndex = 0;
@@ -377,7 +377,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(296, 1);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 20);
+            this.label4.Size = new System.Drawing.Size(32, 15);
             this.label4.TabIndex = 2;
             this.label4.Text = "Prix";
             // 
@@ -386,7 +386,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(4, 1);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 20);
+            this.label1.Size = new System.Drawing.Size(53, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Produit";
             // 
@@ -395,7 +395,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(394, 1);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 20);
+            this.label3.Size = new System.Drawing.Size(61, 15);
             this.label3.TabIndex = 3;
             this.label3.Text = "Quantité";
             // 
@@ -415,40 +415,40 @@
             // montant_total_resultat_lbl
             // 
             this.montant_total_resultat_lbl.AutoSize = true;
-            this.montant_total_resultat_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
-            this.montant_total_resultat_lbl.Location = new System.Drawing.Point(357, 280);
+            this.montant_total_resultat_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.montant_total_resultat_lbl.Location = new System.Drawing.Point(364, 280);
             this.montant_total_resultat_lbl.Name = "montant_total_resultat_lbl";
-            this.montant_total_resultat_lbl.Size = new System.Drawing.Size(48, 18);
+            this.montant_total_resultat_lbl.Size = new System.Drawing.Size(34, 15);
             this.montant_total_resultat_lbl.TabIndex = 16;
             this.montant_total_resultat_lbl.Text = "TVA :";
             // 
             // tva_resultat_lbl
             // 
             this.tva_resultat_lbl.AutoSize = true;
-            this.tva_resultat_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
-            this.tva_resultat_lbl.Location = new System.Drawing.Point(357, 253);
+            this.tva_resultat_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tva_resultat_lbl.Location = new System.Drawing.Point(364, 253);
             this.tva_resultat_lbl.Name = "tva_resultat_lbl";
-            this.tva_resultat_lbl.Size = new System.Drawing.Size(48, 18);
+            this.tva_resultat_lbl.Size = new System.Drawing.Size(34, 15);
             this.tva_resultat_lbl.TabIndex = 15;
             this.tva_resultat_lbl.Text = "TVA :";
             // 
             // tva_lbl
             // 
             this.tva_lbl.AutoSize = true;
-            this.tva_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
-            this.tva_lbl.Location = new System.Drawing.Point(303, 253);
+            this.tva_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tva_lbl.Location = new System.Drawing.Point(319, 253);
             this.tva_lbl.Name = "tva_lbl";
-            this.tva_lbl.Size = new System.Drawing.Size(48, 18);
+            this.tva_lbl.Size = new System.Drawing.Size(39, 15);
             this.tva_lbl.TabIndex = 14;
             this.tva_lbl.Text = "TVA :";
             // 
             // montant_total_
             // 
             this.montant_total_.AutoSize = true;
-            this.montant_total_.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
-            this.montant_total_.Location = new System.Drawing.Point(224, 280);
+            this.montant_total_.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.montant_total_.Location = new System.Drawing.Point(251, 280);
             this.montant_total_.Name = "montant_total_";
-            this.montant_total_.Size = new System.Drawing.Size(127, 18);
+            this.montant_total_.Size = new System.Drawing.Size(107, 15);
             this.montant_total_.TabIndex = 13;
             this.montant_total_.Text = "Montant  Total :";
             // 

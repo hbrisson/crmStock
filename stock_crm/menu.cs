@@ -15,7 +15,7 @@ namespace stock_crm
         public formulaire_tiers_formcs formulaire_tiers_formcs;
         public formulaire_contact_form formulaire_contact_form;
         public formulaire_user formulaire_user;
-        public modifier_tiers modifier_tiers;
+        public consultation_tiers_form consultation_tiers_form;
         public information_user user;
         public modiier_contact modiier_contact;
         public formulaire_proposition formulaire_proposition;
@@ -129,11 +129,11 @@ namespace stock_crm
             //Ferme les forms avant l'ouverture de celle concernée
             Toolbox.fermer_form();
             //On ajoute le form voulu dans le main panel
-            modifier_tiers = new modifier_tiers();
-            modifier_tiers.Text = "Formulaire";
-            modifier_tiers.TopLevel = false;
-            panelForm.Controls.Add(modifier_tiers);
-            modifier_tiers.Show();
+            consultation_tiers_form = new consultation_tiers_form();
+            consultation_tiers_form.Text = "Formulaire";
+            consultation_tiers_form.TopLevel = false;
+            panelForm.Controls.Add(consultation_tiers_form);
+            consultation_tiers_form.Show();
         }
 
         private void nomUser_Click(object sender, EventArgs e)

@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel_modifier_tiers = new System.Windows.Forms.Panel();
-            this.modifiers_tiers = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.idtiers = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.modifiers_tiers = new System.Windows.Forms.Button();
             this.juridique_modifier_tiers = new System.Windows.Forms.ComboBox();
             this.commentaire_modifier_tiers = new System.Windows.Forms.TextBox();
             this.date_paiement_modifier_tiers = new System.Windows.Forms.DateTimePicker();
@@ -63,40 +64,29 @@
             this.siret_label = new System.Windows.Forms.Label();
             this.telephone_modifier_tiers = new System.Windows.Forms.TextBox();
             this.nom_label = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.supprimer_tiers = new System.Windows.Forms.Button();
-            this.idtiers = new System.Windows.Forms.Label();
-            this.panel_modifier_tiers.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel_modifier_tiers
+            // panel1
             // 
-            this.panel_modifier_tiers.BackColor = System.Drawing.Color.White;
-            this.panel_modifier_tiers.Controls.Add(this.idtiers);
-            this.panel_modifier_tiers.Controls.Add(this.supprimer_tiers);
-            this.panel_modifier_tiers.Controls.Add(this.groupBox2);
-            this.panel_modifier_tiers.Controls.Add(this.groupBox1);
-            this.panel_modifier_tiers.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel_modifier_tiers.Location = new System.Drawing.Point(0, 0);
-            this.panel_modifier_tiers.Name = "panel_modifier_tiers";
-            this.panel_modifier_tiers.Size = new System.Drawing.Size(593, 458);
-            this.panel_modifier_tiers.TabIndex = 0;
+            this.panel1.Controls.Add(this.idtiers);
+            this.panel1.Controls.Add(this.groupBox2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(583, 318);
+            this.panel1.TabIndex = 0;
             // 
-            // modifiers_tiers
+            // idtiers
             // 
-            this.modifiers_tiers.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.modifiers_tiers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.modifiers_tiers.Location = new System.Drawing.Point(443, 237);
-            this.modifiers_tiers.Name = "modifiers_tiers";
-            this.modifiers_tiers.Size = new System.Drawing.Size(100, 23);
-            this.modifiers_tiers.TabIndex = 67;
-            this.modifiers_tiers.Text = "Modifier";
-            this.modifiers_tiers.UseVisualStyleBackColor = false;
-            this.modifiers_tiers.Click += new System.EventHandler(this.modifier_tiers_click);
+            this.idtiers.AutoSize = true;
+            this.idtiers.Location = new System.Drawing.Point(254, 289);
+            this.idtiers.Name = "idtiers";
+            this.idtiers.Size = new System.Drawing.Size(34, 13);
+            this.idtiers.TabIndex = 11;
+            this.idtiers.Text = "idtiers";
+            this.idtiers.Visible = false;
             // 
             // groupBox2
             // 
@@ -133,13 +123,25 @@
             this.groupBox2.Controls.Add(this.siret_label);
             this.groupBox2.Controls.Add(this.telephone_modifier_tiers);
             this.groupBox2.Controls.Add(this.nom_label);
-            this.groupBox2.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(10, 154);
+            this.groupBox2.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold);
+            this.groupBox2.Location = new System.Drawing.Point(12, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(561, 266);
-            this.groupBox2.TabIndex = 1;
+            this.groupBox2.Size = new System.Drawing.Size(554, 266);
+            this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Informations du tiers séléctionné";
+            // 
+            // modifiers_tiers
+            // 
+            this.modifiers_tiers.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.modifiers_tiers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.modifiers_tiers.Location = new System.Drawing.Point(443, 237);
+            this.modifiers_tiers.Name = "modifiers_tiers";
+            this.modifiers_tiers.Size = new System.Drawing.Size(100, 23);
+            this.modifiers_tiers.TabIndex = 67;
+            this.modifiers_tiers.Text = "Modifier";
+            this.modifiers_tiers.UseVisualStyleBackColor = false;
+            this.modifiers_tiers.Click += new System.EventHandler(this.modifiers_tiers_Click);
             // 
             // juridique_modifier_tiers
             // 
@@ -470,7 +472,7 @@
             // 
             this.commentaire_label.AutoSize = true;
             this.commentaire_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.commentaire_label.Location = new System.Drawing.Point(339, 160);
+            this.commentaire_label.Location = new System.Drawing.Point(343, 160);
             this.commentaire_label.Name = "commentaire_label";
             this.commentaire_label.Size = new System.Drawing.Size(94, 16);
             this.commentaire_label.TabIndex = 55;
@@ -548,7 +550,7 @@
             // 
             this.naf_label.AutoSize = true;
             this.naf_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.naf_label.Location = new System.Drawing.Point(70, 215);
+            this.naf_label.Location = new System.Drawing.Point(72, 215);
             this.naf_label.Name = "naf_label";
             this.naf_label.Size = new System.Drawing.Size(82, 16);
             this.naf_label.TabIndex = 45;
@@ -558,7 +560,7 @@
             // 
             this.tva_label.AutoSize = true;
             this.tva_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tva_label.Location = new System.Drawing.Point(102, 188);
+            this.tva_label.Location = new System.Drawing.Point(106, 188);
             this.tva_label.Name = "tva_label";
             this.tva_label.Size = new System.Drawing.Size(46, 16);
             this.tva_label.TabIndex = 44;
@@ -579,7 +581,7 @@
             // 
             this.reglement_label.AutoSize = true;
             this.reglement_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reglement_label.Location = new System.Drawing.Point(301, 33);
+            this.reglement_label.Location = new System.Drawing.Point(301, 29);
             this.reglement_label.Name = "reglement_label";
             this.reglement_label.Size = new System.Drawing.Size(136, 16);
             this.reglement_label.TabIndex = 42;
@@ -589,7 +591,7 @@
             // 
             this.date_paiement_label.AutoSize = true;
             this.date_paiement_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.date_paiement_label.Location = new System.Drawing.Point(264, 58);
+            this.date_paiement_label.Location = new System.Drawing.Point(264, 59);
             this.date_paiement_label.Name = "date_paiement_label";
             this.date_paiement_label.Size = new System.Drawing.Size(173, 16);
             this.date_paiement_label.TabIndex = 41;
@@ -599,7 +601,7 @@
             // 
             this.adresse_facturation_label.AutoSize = true;
             this.adresse_facturation_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adresse_facturation_label.Location = new System.Drawing.Point(-1, 135);
+            this.adresse_facturation_label.Location = new System.Drawing.Point(1, 135);
             this.adresse_facturation_label.Name = "adresse_facturation_label";
             this.adresse_facturation_label.Size = new System.Drawing.Size(153, 16);
             this.adresse_facturation_label.TabIndex = 40;
@@ -609,7 +611,7 @@
             // 
             this.adresse_livraison_label.AutoSize = true;
             this.adresse_livraison_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adresse_livraison_label.Location = new System.Drawing.Point(10, 109);
+            this.adresse_livraison_label.Location = new System.Drawing.Point(12, 109);
             this.adresse_livraison_label.Name = "adresse_livraison_label";
             this.adresse_livraison_label.Size = new System.Drawing.Size(142, 16);
             this.adresse_livraison_label.TabIndex = 39;
@@ -619,7 +621,7 @@
             // 
             this.juridique_label.AutoSize = true;
             this.juridique_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.juridique_label.Location = new System.Drawing.Point(40, 83);
+            this.juridique_label.Location = new System.Drawing.Point(42, 82);
             this.juridique_label.Name = "juridique_label";
             this.juridique_label.Size = new System.Drawing.Size(112, 16);
             this.juridique_label.TabIndex = 38;
@@ -629,7 +631,7 @@
             // 
             this.siret_label.AutoSize = true;
             this.siret_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siret_label.Location = new System.Drawing.Point(38, 57);
+            this.siret_label.Location = new System.Drawing.Point(40, 56);
             this.siret_label.Name = "siret_label";
             this.siret_label.Size = new System.Drawing.Size(114, 16);
             this.siret_label.TabIndex = 37;
@@ -647,82 +649,38 @@
             // 
             this.nom_label.AutoSize = true;
             this.nom_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nom_label.Location = new System.Drawing.Point(104, 31);
+            this.nom_label.Location = new System.Drawing.Point(106, 29);
             this.nom_label.Name = "nom_label";
             this.nom_label.Size = new System.Drawing.Size(48, 16);
             this.nom_label.TabIndex = 35;
             this.nom_label.Text = "Nom :*";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(559, 135);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Selection du tiers à modifier";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 28);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(547, 101);
-            this.dataGridView1.TabIndex = 2;
-            this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
-            // 
-            // supprimer_tiers
-            // 
-            this.supprimer_tiers.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.supprimer_tiers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.supprimer_tiers.Location = new System.Drawing.Point(453, 427);
-            this.supprimer_tiers.Name = "supprimer_tiers";
-            this.supprimer_tiers.Size = new System.Drawing.Size(100, 23);
-            this.supprimer_tiers.TabIndex = 2;
-            this.supprimer_tiers.Text = "Supprimer";
-            this.supprimer_tiers.UseVisualStyleBackColor = false;
-            this.supprimer_tiers.Click += new System.EventHandler(this.supprimer_tiers_Click);
-            // 
-            // idtiers
-            // 
-            this.idtiers.AutoSize = true;
-            this.idtiers.Location = new System.Drawing.Point(53, 427);
-            this.idtiers.Name = "idtiers";
-            this.idtiers.Size = new System.Drawing.Size(58, 20);
-            this.idtiers.TabIndex = 3;
-            this.idtiers.Text = "idtiers";
-            this.idtiers.Visible = false;
             // 
             // modifier_tiers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(602, 469);
-            this.Controls.Add(this.panel_modifier_tiers);
+            this.ClientSize = new System.Drawing.Size(583, 318);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "modifier_tiers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "modifier_tiers";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.panel_modifier_tiers.ResumeLayout(false);
-            this.panel_modifier_tiers.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel_modifier_tiers;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label idtiers;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button modifiers_tiers;
         private System.Windows.Forms.ComboBox juridique_modifier_tiers;
         private System.Windows.Forms.TextBox commentaire_modifier_tiers;
         private System.Windows.Forms.DateTimePicker date_paiement_modifier_tiers;
@@ -755,9 +713,6 @@
         private System.Windows.Forms.Label siret_label;
         private System.Windows.Forms.TextBox telephone_modifier_tiers;
         private System.Windows.Forms.Label nom_label;
-        private System.Windows.Forms.Button modifiers_tiers;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button supprimer_tiers;
-        private System.Windows.Forms.Label idtiers;
+
     }
 }
