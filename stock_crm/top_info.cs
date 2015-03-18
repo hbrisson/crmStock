@@ -24,6 +24,7 @@ namespace stock_crm
             InitializeComponent();
             initcomponent(panel1);
             Toolbox.loadGridView(dataGridView1, accueilConnect.connection, null, query_user);
+
         }
 
         public override void initcomponent(Panel panel)

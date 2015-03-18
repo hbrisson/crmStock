@@ -32,7 +32,22 @@ namespace stock_crm
             else
             {
                 isOK = true;
+                alert_evenement();  
                 Close();
+            }
+        }
+
+
+        private void alert_evenement()
+        {
+            string query = "SELECT c.nom AS Contact, c.prenom, a.nom, a.date, a.commentaire FROM action a, tiers t, contact c, usertiers ut WHERE c.id = a.idcontact AND t.id = c.idtiers AND ut.idtiers = t.id AND ut.idusers = '" + Toolbox.userSession.Id + "' AND a.date >= '" + DateTime.Now.ToString("yyyy-MM-dd H:mm:dd") + "' ORDER BY date LIMIT 1";
+            accueilConnect accueilConnect = new accueilConnect();
+            actionCl actionCl = new actionCl();
+            actionCl = accueilConnect.selectaction(query);
+
+            if (actionCl.Date >= DateTime.Now)
+            {
+                MessageBox.Show(" Rappel: " + actionCl.Nom + " le  " + actionCl.Date + " avec " + actionCl.Commentaire + "");
             }
         }
 

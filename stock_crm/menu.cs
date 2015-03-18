@@ -44,6 +44,7 @@ namespace stock_crm
             Accueil_form.TopLevel = false;
             panelForm.Controls.Add(Accueil_form);
             Accueil_form.Show();
+
         }
 
         private void init()

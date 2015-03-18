@@ -13,14 +13,15 @@ namespace stock_crm
 {
     public partial class Accueil_form : customForm
     {
-        
+
         top_info top_info;
 
         public Accueil_form()
         {
             InitializeComponent();
             initcomponent(panel1);
-            init();
+            init();           
+           
         }
 
         public override void initcomponent(Panel panel)
@@ -28,12 +29,14 @@ namespace stock_crm
             base.initcomponent(panel);
         }
 
+
         private void init()
         {
             DateTimeFormatInfo dtf = new CultureInfo("fr-FR", false).DateTimeFormat;
             titre_lbl.Text = titre_lbl.Text.Replace("#nomprenom#", Toolbox.userSession.Nom + " " + Toolbox.userSession.Prenom);
-            date_lbl.Text = date_lbl.Text.Replace("#dateDuJour#",DateTime.Now.ToString("dddd dd MMMM yyyy hh:mm:ss", dtf));
-            if(!Toolbox.userSession.Statut.Equals(statut.directeur)){
+            date_lbl.Text = date_lbl.Text.Replace("#dateDuJour#", DateTime.Now.ToString("dddd dd MMMM yyyy hh:mm:ss", dtf));
+            if (!Toolbox.userSession.Statut.Equals(statut.directeur))
+            {
                 groupBox1.Visible = false;
             }
         }

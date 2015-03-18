@@ -66,6 +66,7 @@
             // 
             // combo_contact
             // 
+            this.combo_contact.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combo_contact.FormattingEnabled = true;
             this.combo_contact.Location = new System.Drawing.Point(166, 79);
             this.combo_contact.Name = "combo_contact";
@@ -83,6 +84,7 @@
             // 
             // comboActions
             // 
+            this.comboActions.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboActions.FormattingEnabled = true;
             this.comboActions.Location = new System.Drawing.Point(166, 131);
             this.comboActions.Name = "comboActions";
@@ -149,6 +151,7 @@
             // 
             // combo_minute
             // 
+            this.combo_minute.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combo_minute.FormattingEnabled = true;
             this.combo_minute.Location = new System.Drawing.Point(293, 233);
             this.combo_minute.Name = "combo_minute";
@@ -166,6 +169,7 @@
             // 
             // combo_heure
             // 
+            this.combo_heure.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combo_heure.FormattingEnabled = true;
             this.combo_heure.Location = new System.Drawing.Point(166, 233);
             this.combo_heure.Name = "combo_heure";
@@ -192,6 +196,7 @@
             // 
             // combo_tiers
             // 
+            this.combo_tiers.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combo_tiers.FormattingEnabled = true;
             this.combo_tiers.Location = new System.Drawing.Point(166, 36);
             this.combo_tiers.Name = "combo_tiers";
@@ -222,6 +227,7 @@
             // dataGridView_a_venir
             // 
             this.dataGridView_a_venir.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dataGridView_a_venir.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView_a_venir.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_a_venir.Location = new System.Drawing.Point(30, 20);
             this.dataGridView_a_venir.Name = "dataGridView_a_venir";
@@ -241,6 +247,7 @@
             // dataGridView_historique
             // 
             this.dataGridView_historique.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dataGridView_historique.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView_historique.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_historique.Location = new System.Drawing.Point(30, 28);
             this.dataGridView_historique.Name = "dataGridView_historique";

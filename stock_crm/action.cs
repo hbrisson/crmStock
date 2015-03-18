@@ -14,11 +14,17 @@ namespace stock_crm
     {
 
         private string query = "SELECT b.id, b.nom, b.juridique, b.pays, b.secteur FROM tiers b WHERE b.id IN ( SELECT idtiers FROM usertiers WHERE idusers = '" + Toolbox.userSession.Id + "')";
-        private string query_evenement = "SELECT t.nom AS tiers, c.nom AS Contact, a.nom AS action, a.date, a.commentaire FROM action a, tiers t, contact c, usertiers ut WHERE c.id = a.idcontact AND t.id = c.idtiers AND ut.idtiers = t.id AND ut.idusers = '" + Toolbox.userSession.Id + "' AND a.date >= '" +DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss")+ "'";
-        private string query_historique = "SELECT t.nom AS tiers, c.nom AS Contact, a.nom AS action, a.date, a.commentaire FROM action a, tiers t, contact c, usertiers ut WHERE c.id = a.idcontact AND t.id = c.idtiers AND ut.idtiers = t.id AND ut.idusers = '" + Toolbox.userSession.Id + "' AND a.date < '" + DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss") + "'";
+        private string query_evenement = "SELECT t.nom AS tiers, c.nom AS Contact, a.nom AS action, a.date, a.commentaire FROM action a, tiers t, contact c, usertiers ut WHERE c.id = a.idcontact AND t.id = c.idtiers AND ut.idtiers = t.id AND ut.idusers = '" + Toolbox.userSession.Id + "' AND a.date >= '" +DateTime.Now.ToString("yyyy-MM-dd H:mm:ss")+ "'";
+        private string query_historique = "SELECT t.nom AS tiers, c.nom AS Contact, a.nom AS action, a.date, a.commentaire FROM action a, tiers t, contact c, usertiers ut WHERE c.id = a.idcontact AND t.id = c.idtiers AND ut.idtiers = t.id AND ut.idusers = '" + Toolbox.userSession.Id + "' AND a.date < '" + DateTime.Now.ToString("yyyy-MM-dd H:mm:ss") + "'";
         public action()
         {
             InitializeComponent();
+            combo_contact.Enabled = false;
+            combo_date.Enabled = false;
+            combo_heure.Enabled = false;
+            combo_minute.Enabled = false;
+            comboActions.Enabled = false;
+            ajout_action.Enabled = false;
             affichage_tiers();
             affichage_action();
             affichage_evenement();
@@ -83,6 +89,12 @@ namespace stock_crm
             list_contact = contactConnect.SelectWhereContactList("*", "contact", "idtiers", id_tiers);
             affichage_contact(list_contact);
 
+            combo_contact.Enabled = true;
+            combo_date.Enabled = true;
+            combo_heure.Enabled = true;
+            combo_minute.Enabled = true;
+            comboActions.Enabled = true;
+            ajout_action.Enabled = true;
         }
 
         private void ajout_action_Click(object sender, EventArgs e)
@@ -137,6 +149,8 @@ namespace stock_crm
                 actionConnect.insertAction(query_action);
 
                 MessageBox.Show("L'evenement a correctement été crée");
+
+                affichage_evenement();
             }
             catch (Exception ex)
             {
