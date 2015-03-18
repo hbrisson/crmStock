@@ -61,11 +61,33 @@
     <Compile Include="assignationNouvCommercial.designer.cs">
       <DependentUpon>assignationNouvCommercial.cs</DependentUpon>
     </Compile>
+    <Compile Include="commande_tiers_form.cs" />
+    <Compile Include="commande_tiers_form.designer.cs">
+      <DependentUpon>commande_tiers_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="facture_form.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="facture_form.Designer.cs">
       <DependentUpon>facture_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu_tiers_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu_tiers_form.designer.cs">
+      <DependentUpon>menu_tiers_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modifier_tiers_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modifier_tiers_form.designer.cs">
+      <DependentUpon>modifier_tiers_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="recherche_tiers_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recherche_tiers_form.designer.cs">
+      <DependentUpon>recherche_tiers_form.cs</DependentUpon>
     </Compile>
     <Compile Include="top_info.cs">
       <SubType>Form</SubType>
@@ -143,12 +165,6 @@
     <Compile Include="menu.Designer.cs">
       <DependentUpon>menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="modifier_tiers.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="modifier_tiers.Designer.cs">
-      <DependentUpon>modifier_tiers.cs</DependentUpon>
-    </Compile>
     <Compile Include="modiier_contact.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,8 +186,20 @@
     <EmbeddedResource Include="assignationNouvCommercial.resx">
       <DependentUpon>assignationNouvCommercial.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="commande_tiers_form.resx">
+      <DependentUpon>commande_tiers_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="facture_form.resx">
       <DependentUpon>facture_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu_tiers_form.resx">
+      <DependentUpon>menu_tiers_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifier_tiers_form.resx">
+      <DependentUpon>modifier_tiers_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="recherche_tiers_form.resx">
+      <DependentUpon>recherche_tiers_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="top_info.resx">
       <DependentUpon>top_info.cs</DependentUpon>
@@ -205,9 +233,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="modifier_tiers.resx">
-      <DependentUpon>modifier_tiers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modiier_contact.resx">
       <DependentUpon>modiier_contact.cs</DependentUpon>
