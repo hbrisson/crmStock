@@ -19,3 +19,6 @@ C:\Users\rodrigue\Documents\Visual Studio 2012\Projects\stock_crm\stock_crm\obj\
 C:\Users\rodrigue\Documents\Visual Studio 2012\Projects\stock_crm\stock_crm\obj\Debug\stock_crm.formulaire_proposition.resources
 C:\Users\rodrigue\Documents\Visual Studio 2012\Projects\stock_crm\stock_crm\obj\Debug\stock_crm.formulaire_user_supprimer.resources
 C:\Users\rodrigue\Documents\Visual Studio 2012\Projects\stock_crm\stock_crm\obj\Debug\stock_crm.formulaire_user_modifier.resources
+C:\Users\Laureen\Documents\crmStock\stock_crm\obj\Debug\stock_crm.csprojResolveAssemblyReference.cache
+C:\Users\Laureen\Documents\crmStock\stock_crm\obj\Debug\stock_crm.exe
+C:\Users\Laureen\Documents\crmStock\stock_crm\obj\Debug\stock_crm.pdb
